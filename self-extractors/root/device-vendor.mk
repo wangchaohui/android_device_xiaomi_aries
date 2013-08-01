@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := mako/device-partial.mk
+LOCAL_STEM := aries/device-partial.mk
 
 $(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/lge/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/xiaomi/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/qcom/$(LOCAL_STEM))

@@ -21,14 +21,14 @@
 BRANCH=jb-mr1.1-dev
 if test $BRANCH = jb-mr1.1-dev
 then
-  ZIP=occam-ota-573038.zip
+  ZIP=aries-ota-573038.zip
   BUILD=jdq39
 fi # jb-mr1.1-dev
-ROOTDEVICE=mako
-DEVICE=mako
-MANUFACTURER=lge
+ROOTDEVICE=aries
+DEVICE=aries
+MANUFACTURER=xiaomi
 
-for COMPANY in broadcom lge qcom
+for COMPANY in broadcom xiaomi qcom
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -42,7 +42,7 @@ do
             system/vendor/firmware/bcm2079x_pre_firmware.ncd \
             "
     ;;
-  lge)
+  xiaomi)
     TO_EXTRACT="\
             system/etc/DxHDCP.cfg \
             system/lib/libAKM.so \
