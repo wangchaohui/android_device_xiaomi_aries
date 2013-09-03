@@ -36,8 +36,8 @@ TARGET_NO_BOOTLOADER := true
 
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=aries lpj=67677
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=aries lpj=67677 ehci-hcd.park=3 lge.kcal=0|0|0|x
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 # Try to build the kernel
 TARGET_KERNEL_CONFIG := aries_defconfig
